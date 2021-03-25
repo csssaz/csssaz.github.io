@@ -1,0 +1,92 @@
+<html>
+<!DOCTYPE html>
+<head>
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="utf-8"/>
+  <meta name="description" content="Hi ~~"/>
+  <meta name="keywords" content="alejandro cassis"/>
+  <title>alejandro cassis</title>
+  <script>
+
+
+    function toggleSsbId() {
+      let ssbId = document.getElementById("ssbId");
+
+      if (ssbId == null) {
+        let ssbLink = document.getElementById("ssbHref");
+
+        let ssbId = document.createElement("span");
+
+        ssbId.id = "ssbId";
+        ssbId.innerHTML = " => @sHFNLAao6phQ5AN17ecYNUbszDa4Qf6DhyQsjtQfdmY=.ed25519 `aka` @corlock";
+
+        ssbLink.parentNode.insertBefore(ssbId, ssbLink.nextSibling);
+
+        ssbIdShown = true;
+      } else {
+        ssbId.parentNode.removeChild(ssbId);
+      }
+
+    }
+  </script>
+</head>
+
+<style>
+
+html {
+
+  font-size: 13px;
+}
+
+.emoji {
+  font-size: 1.6em;
+  vertical-align: middle;
+  line-height: 1.2em;
+}
+
+.cat {
+  font-weight: bold;
+}
+
+.cat:hover {
+  font-style: italic;
+}
+.researcher {
+  color: #9f89eb;
+}
+
+.container {
+
+  width: 300px;
+  height: 200px;
+
+}
+
+</style>
+<body>
+<pre>
+
+    <span class='emoji'>&#x27b;</span> alejandro cassis <span class='emoji'>&#x2766;</span>
+
+
+  I'm a {<span class="researcher cat">PhD student</span>} interested in 
+    [algorithm design and fine grained complexity].
+
+
+  hmu
+    <!-- <span class='emoji'>&#x1F3B6;</span> <a href="https://soundcloud.com/cassisss">soundcloud</a>  -->
+    <span class='emoji'>&#x270D;</span> <a href="images/email.png">email</a> </a>
+
+  <a href="reading-group.html">cvx optimization reading group</a>
+
+
+<div>
+  <img alt="bienvenido" src="images/bienvenido.png" style="float: left;" title="Hello and welcome" width="300"/>
+<p></p>
+</div>
+
+</pre>
+</body>
+
+</html>
