@@ -7,29 +7,6 @@
   <meta name="description" content="Hi ~~"/>
   <meta name="keywords" content="alejandro cassis"/>
   <title>alejandro cassis</title>
-  <script>
-
-
-    function toggleSsbId() {
-      let ssbId = document.getElementById("ssbId");
-
-      if (ssbId == null) {
-        let ssbLink = document.getElementById("ssbHref");
-
-        let ssbId = document.createElement("span");
-
-        ssbId.id = "ssbId";
-        ssbId.innerHTML = " => @sHFNLAao6phQ5AN17ecYNUbszDa4Qf6DhyQsjtQfdmY=.ed25519 `aka` @corlock";
-
-        ssbLink.parentNode.insertBefore(ssbId, ssbLink.nextSibling);
-
-        ssbIdShown = true;
-      } else {
-        ssbId.parentNode.removeChild(ssbId);
-      }
-
-    }
-  </script>
 </head>
 
 <style>
@@ -55,11 +32,14 @@ html {
 .researcher {
   color: #9f89eb;
 }
+.paper {
+  color:rgb(221, 151, 248);
+}
 
 .container {
 
   width: 300px;
-  height: 200px;
+  height: 200px;  
 
 }
 
@@ -70,19 +50,39 @@ html {
     <span class='emoji'>&#x27b;</span> alejandro cassis <span class='emoji'>&#x2766;</span>
 
 
-  I'm a {<span class="researcher cat">PhD student</span>} interested in 
-    [algorithm design and fine grained complexity].
+
+  Hi~~~ I'm a {<span class="researcher cat">PhD student</span>} at Saarland University 
+    advised by <a href="https://people.mpi-inf.mpg.de/~kbringma/" target="_blank">Karl Bringmann</a>.
+  
+  
+
+  My research focuses (so far) in 
+    [fine grained complexity of optimization problems].
+
+  
+
+  Papers[<span class='emoji'>&#x1f9fb;</span>]: 
+  
+    - <span class="paper cat">A Structural Investigation of the Approximability of Polynomial-Time Problems</span>. Submitted.
+        Karl Bringmann, Alejandro Cassis, Nick Fischer and Marvin Künnemann.
+      
+    - <span class="paper cat">Fine-Grained Completeness for Optimization in P</span>. Submitted. 
+        Karl Bringmann, Alejandro Cassis, Nick Fischer and Marvin Künnemann.
+
+ 
+  <span class='emoji'>&#x1f4e2;</span> We are organizing a <a href="reading-group.html">reading group</a> on convex optimization
 
 
-  hmu
-    <!-- <span class='emoji'>&#x1F3B6;</span> <a href="https://soundcloud.com/cassisss">soundcloud</a>  -->
+  -- 
+
+  write me:
     <span class='emoji'>&#x270D;</span> <a href="images/email.png">email</a> </a>
 
-  <a href="reading-group.html">cvx optimization reading group</a>
+  --
 
-
+  <span class='emoji'>&#x2621;</span> random moods and sounds <span class='emoji'>&#x2621;</span> <a href="dump_1.html">dump</a>
 <div>
-  <img alt="bienvenido" src="images/bienvenido.png" style="float: left;" title="Hello and welcome" width="300"/>
+  <img alt="bienvenido" src="images/bienvenido.png" style="float: left;" title="hi and welcome" width="300"/>
 <p></p>
 </div>
 
