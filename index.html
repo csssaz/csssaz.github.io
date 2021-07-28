@@ -30,11 +30,17 @@ html {
 .cat:hover {
   font-style: italic;
 }
+
 .researcher {
   color: #9f89eb;
 }
+
 .paper {
   color:rgb(221, 151, 248);
+}
+
+.conference {
+  color: rgb(140, 158, 96);
 }
 
 .container {
@@ -42,6 +48,34 @@ html {
   width: 300px;
   height: 200px;  
 
+}
+
+#lol {
+position:absolute;
+top:35%;
+left:45%;
+width:10%;	
+transform: perspective( 600px ) rotateX( 0deg ) rotateY( 0deg ) rotateZ( 0deg ) skewX( 0px ) scale3D(1.0,1.0,1.0);
+z-index:-1 !important;
+animation-name: wow;
+animation-duration: 25s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes wow{
+0% {transform: perspective( 600px ) rotateX( 0deg ) rotateY( 0deg ) rotateZ( 0deg ) skewX( 0deg ) scale3D(1.0,1.0,1.0);}
+15% {transform: perspective( 600px ) rotateX( 0deg ) rotateY( 0deg ) rotateZ( 0deg ) skewX( 0deg ) scale3D(1.0,1.0,1.0);}
+20% {transform: perspective( 500px ) rotateX( 90deg ) rotateY( 20deg ) rotateZ( 50deg ) skewX( 50deg ) scale3D(1.3,0.9,1.1);}
+25% {transform: perspective( 400px ) rotateX( 120deg ) rotateY( 60deg ) rotateZ( 90deg ) skewX( 20deg ) scale3D(1.5,0.8,1.2);}
+30% {transform: perspective( 300px ) rotateX( 150deg ) rotateY( 100deg ) rotateZ( 130deg ) skewX( 30deg ) scale3D(1.4,0.7,1.3);}
+40% {transform: perspective( 200px ) rotateX( 190deg ) rotateY( 180deg ) rotateZ( 150deg ) skewX( 40deg ) scale3D(1.3,0.8,1.4);}
+50% {transform: perspective( 100px ) rotateX( 210deg ) rotateY( 250deg ) rotateZ( 210deg ) skewX( 50deg ) scale3D(1.2,0.7,1.5);}
+60% {transform: perspective( 50px ) rotateX( 180deg ) rotateY( 230deg ) rotateZ( 300deg ) skewX( 300deg ) scale3D(1.1,0.8,1.4);}
+70% {transform: perspective( 30px ) rotateX( 150deg ) rotateY( 200deg ) rotateZ( 200deg ) skewX( 80deg ) scale3D(1.0,0.9,1.3);}
+80% {transform: perspective( 100px ) rotateX( 90deg ) rotateY( 120deg ) rotateZ( 100deg ) skewX( 100deg ) scale3D(0.9,1.0,1.2);}
+90% {transform: perspective( 400px ) rotateX( 20deg ) rotateY( 50deg ) rotateZ( 70deg ) skewX( 50deg ) scale3D(1.0,1.1,1.1);}
+100% {transform: perspective( 600px ) rotateX( 0deg ) rotateY( 0deg ) rotateZ( 0deg ) skewX( 0deg ) scale3D(1.0,1.0,1.0);}
 }
 
 </style>
@@ -67,7 +101,7 @@ html {
     - <span class="paper cat">A Structural Investigation of the Approximability of Polynomial-Time Problems</span>. Submitted.
         Karl Bringmann, Alejandro Cassis, Nick Fischer and Marvin Künnemann.
       
-    - <span class="paper cat">Fine-Grained Completeness for Optimization in P</span>. Submitted. 
+    - <span class="paper cat">Fine-Grained Completeness for Optimization in P</span>. <span class="conference cat">APPROX-RANDOM 2021</span>. <a href="https://arxiv.org/abs/2107.01721" target="_blank">arXiv</a>. 
         Karl Bringmann, Alejandro Cassis, Nick Fischer and Marvin Künnemann.
 
 
@@ -85,9 +119,11 @@ html {
 
   --
 
-  <span class='emoji'>&#x2621;</span> moods and sounds <span class='emoji'>&#x2621;</span> <a href="dump_1.html">1</a> <a href="dump_2.html">2</a>
+  <span class='emoji'>&#x2621;</span> <span class='emoji'>&#x2621;</span> <a href="dump_1.html">1</a> <a href="dump_2.html">2</a>
 <div>
   <img alt="bienvenido" src="images/bienvenido.png" style="float: left;" title="hii and welcome" width="300"/>
+
+  <!-- <img src="images/dump/6.png" width="200" id="lol"> -->
 <p></p>
 </div>
 
