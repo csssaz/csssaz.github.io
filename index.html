@@ -4,7 +4,8 @@
   
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.svg">
   <meta name="google-site-verification" content="hiyM-NY8f9NSlhC1L-ozQHOsgF4BUFa1hKmsPsZ1HAY"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.5"> 
+  <!-- <meta name="viewport" content="user-scalable = yes"> -->
   <meta charset="utf-8"/>
   <meta name="description" content="Hi ~~"/>
   <meta name="keywords" content="alejandro cassis"/>
@@ -20,6 +21,7 @@
 
 html {
   font-size: 13px;
+  /* width: max-content; */
 }
 
 pre {
@@ -27,6 +29,10 @@ pre {
   /* font-family: "Inconsolata", monospace; */
   font-family: "Roboto Mono", monospace;
   white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+  padding-left: 20px;
+  /* width: max-content; */
 }
 
 a {
@@ -37,17 +43,6 @@ a:hover, a:focus, a:active {
   border: 0;
   color: #ba7e23;
   text-decoration: none;
-}
-
-
-.authors {
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  color: #33353c;
-  opacity: 0.4;
-  text-decoration: none;
-  transition: 0.5s;
 }
 
 .emoji {
@@ -121,97 +116,100 @@ animation-timing-function: linear;
 <body>
 <pre>
 
-    <span class='emoji'>&#x27b;</span> alejandro cassis <span class='emoji'>&#x2766;</span>
+  <span class='emoji'>&#x27b;</span> alejandro cassis <span class='emoji'>&#x2766;</span>
 
 
 
-  Hi~~~ i am a last year {<span class="researcher cat">PhD student</span>} at Saarland University and
-  the Max Planck Institute for Informatics. 
-  I am lucky to be advised by <a href="https://people.mpi-inf.mpg.de/~kbringma/" target="_blank">Karl Bringmann</a>.
+Hi~~~ i am a last year {<span class="researcher cat">PhD student</span>} at Saarland University and
+the Max Planck Institute for Informatics. 
+I am lucky to be advised by <a href="https://people.mpi-inf.mpg.de/~kbringma/" target="_blank">Karl Bringmann</a>.
 
-  I was born and raised in La Paz, Bolivia. Some lives ago I did my bachelors degree in México. 
+I was born and raised in La Paz, Bolivia. 
+Some lives ago I did my bachelors degree in México. 
 
-    <div>
-      <img alt="hi" src="images/selfielol.jpeg"  title="hola" width="250"/>
-    </div>
-  
-  I am broadly interested in theoretical computer science;;;
-  ~~ my research has focused mainly on theoretical and mathematical aspects 
-  of algorithm design for {<span class="cat", style="color: rgb(87, 137, 186)">strings and combinatorial optimization</span>} problems.
-  Here are two research highlights:
-  
-    🪡🪡 In [<a href="https://arxiv.org/abs/2205.08493" target="_blank">BC'22</a>, <a href="https://arxiv.org/abs/2305.01593" target="_blank">BC'23</a>] we give some of the currently best-known algorithms 
-      for the classic <a href="https://en.wikipedia.org/wiki/Knapsack_problem">knapsack problem</a>. our results leverage modern 
-      algorithmic tools related to (min,+)-convolutions.
+  <div>
+    <img alt="hi" src="images/selfielol.jpeg"  title="hola" width="250"/>
+  </div>
+
+I am broadly interested in theoretical computer science;;;
+~~ my research has focused mainly on theoretical and mathematical aspects 
+of algorithm design for {<span class="cat", style="color: rgb(87, 137, 186)">strings and combinatorial optimization</span>} problems.
+Here are two research highlights:
+
+<div style="padding-left: 5px;">
+🪡🪡 In [<a href="https://arxiv.org/abs/2205.08493" target="_blank">BC'22</a>, <a href="https://arxiv.org/abs/2305.01593" target="_blank">BC'23</a>] we give some of the currently best-known algorithms 
+for the classic <a href="https://en.wikipedia.org/wiki/Knapsack_problem">knapsack problem</a>. our results leverage modern 
+algorithmic tools related to (min,+)-convolutions.
+
+🪡🪡 In [<a href="https://arxiv.org/abs/2204.14137" target="_blank">BCFN'22</a>] we give the best-known algorithm to estimate the 
+<a href="https://en.wikipedia.org/wiki/Edit_distance">edit distance</a> between texts in a setting where we do not read the 
+entire input (aka sublinear-time algorithms). our algorithm makes use 
+of several sampling and property testing techniques.
+</div>
+
+
+list of papers [<span class='emoji'>🧻</span>]: 
+
+- <span class="paper-2023 cat">Optimal Algorithms for Bounded Weighted Edit Distance</span>
+    Alejandro Cassis, Tomasz Kociumaka and Philip Wellnitz
+    to appear in <span class="conference cat">FOCS 2023</span>. <a href="https://arxiv.org/abs/2305.06659" target="_blank">pdf</a> 
+
+- <span class="paper-2023 cat">Negative-Weight Single-Source Shortest Paths in Near-Linear Time: Now Faster!</span>
+    Karl Bringmann, Alejandro Cassis and Nick Fischer
+    to appear in <span class="conference cat">FOCS 2023</span>. <a href="https://arxiv.org/abs/2304.05279" target="_blank">pdf</a>
+
+- <span class="paper-2023 cat">Faster 0-1-Knapsack via Near-Convex Min-Plus-Convolution</span>
+    Karl Bringmann and Alejandro Cassis
+    to appear in <span class="conference cat">ESA 2023</span>. <a href="https://arxiv.org/abs/2305.01593" target="_blank">pdf</a>
+
+- <span class="paper-2022 cat">Almost-Optimal Sublinear-Time Edit Distance in the Low Distance Regime</span>. 
+    Karl Bringmann, Alejandro Cassis, Nick Fischer and Vasileios Nakos.
+    published in <span class="conference cat">STOC 2022</span>. <a href="https://arxiv.org/abs/2202.08066" target="_blank">pdf</a>
     
-    🪡🪡 In [<a href="https://arxiv.org/abs/2204.14137" target="_blank">BCFN'22</a>] we give the best-known algorithm to estimate the 
-      <a href="https://en.wikipedia.org/wiki/Edit_distance">edit distance</a> between texts in a setting where we do not read the 
-      entire input (aka sublinear-time algorithms). our algorithm makes use 
-      of several sampling and property testing techniques.
+- <span class="paper-2022 cat">Improved Sublinear-Time Edit Distance for Preprocessed Strings</span>. 
+    Karl Bringmann, Alejandro Cassis, Nick Fischer and Vasileios Nakos.
+    published in <span class="conference cat">ICALP 2022</span>. <a href="https://arxiv.org/abs/2204.14137" target="_blank">pdf</a>
 
+- <span class="paper-2022 cat">Faster Knapsack Algorithms via Bounded Monotone Min-Plus-Convolution</span>. 
+    Karl Bringmann and Alejandro Cassis.
+    published in <span class="conference cat">ICALP 2022</span>. <a href="https://arxiv.org/abs/2205.08493" target="_blank">pdf</a>
+
+- <span class="paper-2022 cat">A Structural Investigation of the Approximability of Polynomial-Time Problems</span>. 
+    Karl Bringmann, Alejandro Cassis, Nick Fischer and Marvin Künnemann.
+    published in <span class="conference cat">ICALP 2022</span>. <a href="https://arxiv.org/abs/2204.11681" target="_blank">pdf</a>
   
-  list of papers [<span class='emoji'>🧻</span>]: 
+- <span class="paper-2021 cat">Fine-Grained Completeness for Optimization in P</span>.  
+    Karl Bringmann, Alejandro Cassis, Nick Fischer and Marvin Künnemann.
+    published in <span class="conference cat">APPROX-RANDOM 2021</span>. <a href="https://arxiv.org/abs/2107.01721" target="_blank">pdf</a>
 
-    - <span class="paper-2023 cat">Optimal Algorithms for Bounded Weighted Edit Distance</span>
-        Alejandro Cassis, Tomasz Kociumaka and Philip Wellnitz
-        to appear in <span class="conference cat">FOCS 2023</span>. <a href="https://arxiv.org/abs/2305.06659" target="_blank">pdf</a> 
 
-    - <span class="paper-2023 cat">Negative-Weight Single-Source Shortest Paths in Near-Linear Time: Now Faster!</span>
-        Karl Bringmann, Alejandro Cassis and Nick Fischer
-        to appear in <span class="conference cat">FOCS 2023</span>. <a href="https://arxiv.org/abs/2304.05279" target="_blank">pdf</a>
 
-    - <span class="paper-2023 cat">Faster 0-1-Knapsack via Near-Convex Min-Plus-Convolution</span>
-        Karl Bringmann and Alejandro Cassis
-        to appear in <span class="conference cat">ESA 2023</span>. <a href="https://arxiv.org/abs/2305.01593" target="_blank">pdf</a>
+news:
 
-    - <span class="paper-2022 cat">Almost-Optimal Sublinear-Time Edit Distance in the Low Distance Regime</span>. 
-        Karl Bringmann, Alejandro Cassis, Nick Fischer and Vasileios Nakos.
-        published in <span class="conference cat">STOC 2022</span>. <a href="https://arxiv.org/abs/2202.08066" target="_blank">pdf</a>
-        
-    - <span class="paper-2022 cat">Improved Sublinear-Time Edit Distance for Preprocessed Strings</span>. 
-        Karl Bringmann, Alejandro Cassis, Nick Fischer and Vasileios Nakos.
-        published in <span class="conference cat">ICALP 2022</span>. <a href="https://arxiv.org/abs/2204.14137" target="_blank">pdf</a>
+<span class='emoji'>📢</span> 01.23 ~ I attended the Santiago 2023 Workshop in Combinatorial Optimization </a>
 
-    - <span class="paper-2022 cat">Faster Knapsack Algorithms via Bounded Monotone Min-Plus-Convolution</span>. 
-        Karl Bringmann and Alejandro Cassis.
-        published in <span class="conference cat">ICALP 2022</span>. <a href="https://arxiv.org/abs/2205.08493" target="_blank">pdf</a>
+<span class='emoji'>🕞</span> 04.22 ~ Co-organizing <a href="https://cms.sic.saarland/strings22/" target="_blank">a seminar on string algorithms</a>
 
-    - <span class="paper-2022 cat">A Structural Investigation of the Approximability of Polynomial-Time Problems</span>. 
-        Karl Bringmann, Alejandro Cassis, Nick Fischer and Marvin Künnemann.
-        published in <span class="conference cat">ICALP 2022</span>. <a href="https://arxiv.org/abs/2204.11681" target="_blank">pdf</a>
+<span class='emoji'>🕑</span> 09.21 ~ Teaching assistant for the course <a href="https://cms.sic.saarland/finegrained/" target="_blank">Fine-Grained Complexity Theory</a>
       
-    - <span class="paper-2021 cat">Fine-Grained Completeness for Optimization in P</span>.  
-        Karl Bringmann, Alejandro Cassis, Nick Fischer and Marvin Künnemann.
-        published in <span class="conference cat">APPROX-RANDOM 2021</span>. <a href="https://arxiv.org/abs/2107.01721" target="_blank">pdf</a>
+<span class='emoji'>🕠</span> 07.21 ~ Co-organizer of <a href="https://conferences.mpi-inf.mpg.de/adfocs-22/" target="_blank">ADFOCS</a>: a virtual summer school on convex optimization
 
-
-  
-  news:
-
-  <span class='emoji'>📢</span> 01.23 ~ I attended the Santiago 2023 Workshop in Combinatorial Optimization </a>
-  
-  <span class='emoji'>🕞</span> 04.22 ~ Co-organizing <a href="https://cms.sic.saarland/strings22/" target="_blank">a seminar on string algorithms</a>
-
-  <span class='emoji'>🕑</span> 09.21 ~ Teaching assistant for the course <a href="https://cms.sic.saarland/finegrained/" target="_blank">Fine-Grained Complexity Theory</a>
-        
-  <span class='emoji'>🕠</span> 07.21 ~ Co-organizer of <a href="https://conferences.mpi-inf.mpg.de/adfocs-22/" target="_blank">ADFOCS</a>: a virtual summer school on convex optimization
-
-  <span class='emoji'>🕞</span> 03.23 ~ Co-organizer of a <a href="reading-group.html">reading group</a> on convex optimization
+<span class='emoji'>🕞</span> 03.23 ~ Co-organizer of a <a href="reading-group.html">reading group</a> on convex optimization
 
 
 
-  -- 
+-- 
 
-  contact:
-    <span class='emoji'>✍</span> <a href="images/email.png">email</a> </a>
-    pronouns: he/him 
+contact:
+  <span class='emoji'>✍</span> <a href="images/email.png">email</a> </a>
+  pronouns: he/him 
 
-  --
+--
 
 
-  <span class='emoji'>🌺 🖌</span> running line and/or (b)log <a href="log.html">21-22</a>, <a href="log23.html">23-></a>
+<span class='emoji'>🌺 🖌</span> running line and/or (b)log <a href="log.html">21-22</a>, <a href="log23.html">23-></a>
 
-  <span class='emoji'>🪸 🎐</span> artifacts <a href="map.html">thru time</a>
+<span class='emoji'>🪸 🎐</span> artifacts <a href="map.html">thru time</a>
 
 
 <div>
